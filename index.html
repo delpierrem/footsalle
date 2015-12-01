@@ -10,25 +10,31 @@
   <body>
     <div class="global">
       <script language="javascript">
-
+      // var player= [ ];
        function ask () {
          var team = document.getElementById("inputTeam").value;
          document.getElementById("team").innerHTML = team;
-         var player = document.getElementById("player1").value;
+         var player = document.getElementById("player1Name").value;
          document.getElementById("player").innerHTML = player;
          var player2 = document.getElementById("player2Name").value;
          document.getElementById("player2").innerHTML = player2;
+         var player3 = document.getElementById("player3Name").value;
+         document.getElementById("player3").innerHTML = player3;
+         var player4 = document.getElementById("player4Name").value;
+         document.getElementById("player4").innerHTML = player4;
+         var player5 = document.getElementById("player5Name").value;
+         document.getElementById("player5").innerHTML = player5;
          }
        </script>
 </div>
     <div class="bigbloc1">
       <div class="bloc1">
         <label>Nom de l'équipe 1?</label><input id="inputTeam" type="text"><br>
-        <label>Nom du joueur1 ?</label><input id="player1" type="text"><br>
+        <label>Nom du joueur1 ?</label><input id="player1Name" type="text"><br>
         <label>Nom du joueur2 ?</label><input id="player2Name" type="text"><br>
-        <label>Nom du joueur3 ?</label><input id="player3" type="text"><br>
-        <label>Nom du joueur4 ?</label><input id="player4" type="text"><br>
-        <label>Nom du joueur5 ?</label><input id="player4" type="text"><br>
+        <label>Nom du joueur3 ?</label><input id="player3Name" type="text"><br>
+        <label>Nom du joueur4 ?</label><input id="player4Name" type="text"><br>
+        <label>Nom du joueur5 ?</label><input id="player5Name" type="text"><br>
         <button onclick="javascript:ask();">submit! </button>
       </div>
       <div class="bloc12">
@@ -43,13 +49,13 @@
                 <th>joueur 2:</th><td id="player2"></td>
               </tr>
               <tr>
-                <th>joueur 3:</th><td id="player1"></td>
+                <th>joueur 3:</th><td id="player3"></td>
               </tr>
               <tr>
-                <th>joueur 4:</th><td id="player1"></td>
+                <th>joueur 4:</th><td id="player4"></td>
               </tr>
-              <tr>
-                <th>joueur 5:</th><td id="player1"></td>
+            <tr>
+                <th>joueur 5:</th><td id="player5"></td>
               </tr>
         </table>
       </div>
