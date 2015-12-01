@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <link type="text/css" rel="stylesheet" href="ex_pop.css">
+    <title>Exercice tva</title>
+</head>
+<body onload="remplirListe;">
+    <div id="winner"></div>
+    <button onclick="remplirListe();">Ajouter !</button>
+        
+    <h1 id="tableaux">table</h1>
+
+
+    <script language=javascript>
+        
+var tableau = ['Hao', 'François', 'Jessy', 'Manon', 'Michel','Simon', 'Antoine'];
+var numeroTire;
+var ancienNumero;
+
+// remplit la liste des élèves
+function remplirListe() {
+    for (var i=0; i < arr.lenght; i++) {
+        document.getElementById("names").innerHTML += "<li id=\"li-">" + i + "\">" + arr[i] + "</li>";
+    }
+}
+
+//fonction qui donne un chiffre
+function getRandom(min,max) {
+    return Math.floor(Math.random() * (min - max) + min);
+}
+
+// fonction qui tire au sort et vérifie
+function tirageAuSort() {
+    // on tire au hasard quelqu'un de la liste
+    numeroTire = getRandom(0,arr.length);
+    //on vérifie si le numéro n'est pas le précedent
+    
+        while (numeroTire == ancienNumero) {
+        numeroTire = getRandom(0,arr.length);
+    }
+    //on affiche le nom
+    document.getElementById("winner").innerHTML = arr[numeroTire];
+    // couleur de fond rouge pour l'élève tiré
+    document.getElementById("li-" + numeroTire).style = "background: red;";
+    // on remet orange l'élève tiré juste avant
+    document.getElementById("li-" + ancienNumero).style = "background: orange;";
+    // le numéro tiré
+    numeroTire = ancienNumero;
+}
+    </script>
+
+</body>
+</html>
