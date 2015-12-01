@@ -1,0 +1,26 @@
+.global {
+  width: 100%;
+}
+
+.bigbloc1, .bigbloc2, .bigbloc3, .bigbloc4, .bigbloc5, .bigbloc6{
+  width: 100%;
+  background-color: yellow;
+
+}
+
+.bloc1 ,.bloc2 ,.bloc3 ,.bloc4 ,.bloc5 ,.bloc6 {
+  width: 48%;
+  height: 250px;
+  border: 1px solid black ;
+  margin-bottom: 10px;
+  float: left;
+
+}
+
+.bloc12 , .bloc22, .bloc32, .bloc42, .bloc52, .bloc62{
+  float: left;
+  width: 48%;
+  height: 250px;
+  border: 1px solid black ;
+  margin-bottom: 10px;
+}
