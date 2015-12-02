@@ -160,6 +160,26 @@ header {
   margin-bottom: 5%;
 
 }
+
+.between h3 {
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 40px;
+  line-height: 90px;
+}
+
+.betweenend h3 {
+
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 30px;
+  padding-top: 35px;
+}
+
 .betweenend{
   width: 100%;
   height: 100px;
