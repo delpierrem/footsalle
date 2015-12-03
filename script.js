@@ -14,6 +14,7 @@
 //
 //   }
 //   // ****************************************************************************
+
 window.onload = function(e){
   if(typeof localStorage!='undefined') {
     for (numeroTeam=1; numeroTeam<=6 ; numeroTeam++) {
@@ -23,9 +24,9 @@ window.onload = function(e){
       }
 
       for (i=1; i<=5 ; i++) {
-        var player = localStorage.getItem( "Player"+i);
+        var player = localStorage.getItem("team" + numeroTeam + "Player"+i);
         if (player != null) {
-          document.getElementById("Player"+i).innerHTML = player;
+          document.getElementById("team"+ numeroTeam +"Player"+i).innerHTML = player;
         }
       }
     }
