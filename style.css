@@ -217,7 +217,7 @@ h2{
   width: 100%;
   height: 300px
 }
-.vs1 {
+.t1match1, .t1match2, .t1match3, .t1match4, .t1match5, .t2match1, .t2match2, .t2match3, .t2match4, .t2match5, .t3match1, .t3match2, .t3match3, .t3match4, .t3match5{
   width: 19%;
   height: 250px;
   float: left;
